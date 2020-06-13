@@ -58,7 +58,13 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <form class="form" autocomplete="off">
+              <button class="closed-button" type="submit" data-modal-close>
+                <svg>
+                  <use href="./img/aa1.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+              </button>
               <b class="title">Оставьте свои данные, мы вам перезвоним</b>
+
               <label class="form-field">
                 <input
                   type="text"
@@ -115,12 +121,11 @@
               <label class="form-field">
                 <input
                   type="textarea"
-                  class="form-input comment"
+                  class="form-input comment-input"
                   name="textarea"
                   placeholder=" "
                 />
-                <span class="form-label">Комментарий</span>
-                <span class="icon"></span>
+                <span class="comment-label">Комментарий</span>
               </label>
 
               <label class="agreement">
@@ -132,49 +137,21 @@
                 />
                 <svg class="icon-chek">
                   <use
-                    href="./img/a2.svg#icon-chek"
+                    href="./img/aa1.svg#icon-Vector-10"
                     width="20px"
                     height="20px"
                   ></use>
                 </svg>
-                <!--<span class="icon"></span>-->
+
                 <span class="text"
                   >Соглашаюсь с рассылкой и принимаю
                   <a href="">Условия договора</a></span
                 >
               </label>
-              <button type="submit">Оставить заявку</button>
+              <button class="hero-button" type="submit">Отправить</button>
             </form>
           </div>
         </div>
-        <!--<button class="hero-button" data-modal-open>Заказать услугу</button>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <form class="form js-speaker-form">
-              <b>Оставьте свои данные, мы вам перезвоним</b>
-              <label for="name">Имя</label>
-              <input type="text" name="name" id="name" />
-              <label for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel" />
-              <label for="mail">Почта</label>
-              <input type="e-mail" name="mail" id="mail" />
-              <label for="comment">Оставьте коментарий</label>
-              <textarea
-                class="comment"
-                name="comment"
-                id="comment"
-                rows="8"
-                placeholder="Комментарий"
-              ></textarea>
-              <input type="checkbox" name="policy" id="policy" />
-              <label for="policy"
-                >Соглашаюсь с рассылкой и принимаю
-                <a href="">Условия договора</a>
-              </label>
-            </form>
-            <button type="submit" data-modal-close>Отправить</button>
-          </div>
-        </div>-->
       </section>
       <!--Преимущества-->
       <section class="section">
