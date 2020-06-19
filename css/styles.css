@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -106,7 +116,7 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-  opacity: 0;
+  opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .studio-link:hover::after,
@@ -123,7 +133,7 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-  opacity: 0;
+  opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .portfolio-link:hover::after,
@@ -133,6 +143,7 @@ img {
 .address {
   margin-left: auto;
 }
+
 .address .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -473,9 +484,10 @@ footer {
 .cosials-icon {
   fill: #ffffff;
 }
-.newsletter {
+
+.footer-form {
   display: flex;
-  flex-direction: column;
+  margin-top: 20px;
 }
 .footer-button {
   display: flex;
@@ -495,12 +507,23 @@ footer {
   margin-right: 10px;
 }
 .newsletter .title {
-  margin-bottom: 21px;
   text-transform: uppercase;
   color: var(--title-text-color-second);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
+}
+.footer-field {
+  display: flex;
+}
+.footer-input {
+  margin-right: 12px;
+  padding-left: 16px;
+  width: 358px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .copyright {
   padding-top: 18px;
@@ -637,6 +660,10 @@ footer {
   line-height: 1.71;
   color: #757575;
 }
+.contract {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
 
 /*Projects*/
 .container .title-portfolio {
@@ -676,6 +703,10 @@ footer {
   margin: 15px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  /* box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);*/
+}
+.works-list .item:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -709,9 +740,6 @@ footer {
   width: 370px;
   margin-left: auto;
   margin-right: auto;
-
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .product-thumb:hover::before {
