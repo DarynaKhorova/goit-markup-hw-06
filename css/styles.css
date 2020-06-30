@@ -678,7 +678,7 @@ footer {
 
 .form-field:focus-within > .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
-  transform: translate(-30px, -50px);
+  transform: translate(-30px, -45px);
 }
 .form-field:focus-within > .comment-label,
 .form-input:not(:placeholder-shown) + .comment-label {
@@ -704,6 +704,7 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: border-box;
+  fill: var(--accent-color);
 }
 
 .agreement .text {
